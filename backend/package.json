@@ -1,0 +1,56 @@
+{
+  "name": "gameapp-backend",
+  "version": "1.0.0",
+  "description": "Backend API multilingue pour GameApp mobile",
+  "main": "src/server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "lint": "eslint src/",
+    "extract-i18n": "i18n-scanner --config i18n-scanner.config.js",
+    "validate-i18n": "node scripts/validate-translations.js"
+  },
+  "keywords": [
+    "gameapp",
+    "api",
+    "mobile",
+    "games",
+    "multilingual"
+  ],
+  "author": "Adrien",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.0",
+    "compression": "^1.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "i18n": "^0.15.1",
+    "i18next": "^25.2.1",
+    "i18next-express-middleware": "^2.0.0",
+    "i18next-fs-backend": "^2.6.0",
+    "i18next-http-middleware": "^3.7.4",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.15.2",
+    "multer": "^2.0.1",
+    "redis": "^5.5.6"
+  },
+  "devDependencies": {
+    "eslint": "^9.29.0",
+    "jest": "^30.0.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.5.3",
+    "supertest": "^7.1.1"
+  }
+}
